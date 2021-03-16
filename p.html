@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #menu {
+
+            list-style-type: none;
+            background: lightblue;
+        }
+
+
+
+        #menu li:hover {
+            color: fuchsia;
+            border-bottom: 2px solid fuchsia;
+        }
+
+        #menu>li {
+            display: inline-block;
+            margin-left: 55px;
+        }
+
+        #cities {
+            display: none;
+
+            position: absolute;
+            background: lightblue;
+            width: 150px;
+        }
+
+        #dropMenu:hover #cities {
+            display: block;
+        }
+
+        #one {
+            display: none;
+        }
+
+        #dropMenu:hover #cities:hover #one {
+            display: block;
+            list-style-type: none;
+        }
+
+        #one {
+            background-color: brown;
+            height: 100px;
+            margin: 0;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li>Home</li>
+            <li id="dropMenu">Select Cities
+
+
+                <ul id="cities">
+                    <li id="F"> FSD
+                        <ul id="one">
+                            <li>ghaziabad</li>
+                            <li>green twon</li>
+                            <li>nishatabad</li>
+                        </ul>
+                    </li>
+
+                    <li>LHR</li>
+                    <li>ISD</li>
+                    <li>MUL</li>
+                </ul>
+
+            </li>
+            <li>Dashboard</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 500px;
+        }
+
+        #one {
+            position: relative;
+            width: 200px;
+            top: 500px;
+        }
+
+        @keyframes halianimation {
+            0% {
+                margin-left: 0;
+            }
+
+            5% {
+                top: 0;
+            }
+
+            10% {
+                bottom: 200px;
+            }
+
+            90% {
+                bottom: 0%;
+            }
+
+            100% {
+                margin-left: 80%;
+            }
+        }
+
+        #one {
+            animation: halianimation 10s linear 0s;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="one" src="helicopter.png" alt="">
+    </div>
+</body>
+
+</html>

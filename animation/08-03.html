@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        @keyframes myColorAnimation {
+
+            0% {
+                background-color: blue;
+
+            }
+
+            22% {
+                background-color: red;
+                width: 500px;
+            }
+
+            50% {
+                background-color: magenta;
+                width: 100px;
+                height: 650px;
+            }
+
+            60%{
+                background-color: green;
+            }
+
+            75% {
+                background-color: pink;
+                width: 700px;
+            }
+
+            100% {
+                background-color:cyan;
+                width: 50px;
+            }
+
+
+        }
+
+        #box {
+            animation: myColorAnimation 10s linear 0s;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="box">
+
+    </div>
+
+
+</body>
+
+</html>

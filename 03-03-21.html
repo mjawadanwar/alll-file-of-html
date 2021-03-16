@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one {
+            /* width: 100px; */
+            background-color: green;
+            /* height: 100px; */
+        }
+
+        #two {
+            /* width: 100px; */
+            background-color: tomato;
+            /* height: 100px; */
+        }
+
+        #three {
+            /* width: 100px; */
+            background-color: violet;
+            /* height: 100px; */
+        }
+
+        #four {
+            /* width: 100px; */
+            background-color: purple;
+            /* height: 100px; */
+        }
+
+        #five {
+            /* width: 100px; */
+            background-color: red;
+            /* height: 100px; */
+        }
+
+        #six {
+            /* width: 100px; */
+            background-color: yellow;
+            /* height: 100px; */
+        }
+
+        #one {
+            grid-area: area1;
+        }
+
+        #two {
+            grid-area: area2;
+        }
+
+        #three {
+            grid-area: area3;
+        }
+
+        #four {
+            grid-area: area4;
+        }
+
+        #five {
+            grid-area: area5;
+        }
+
+        #six {
+            grid-area: area6;
+        }
+
+        .parent {
+            WIDTH: 500PX;
+            height: 500px;
+            /* margin: 200px; */
+            display: grid;
+            grid-template:
+                "area1 area4 area4 area6"
+                "area1 area5 area5 area6"
+                "area3 area3 area3 area3"
+        }
+        .parent div{
+            margin: 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div id="one">1</div>
+        <!-- <div id="two">2</div> -->
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <div id="six">6</div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one img {
+            width: 100%;
+        }
+
+        #carbody {
+            position: relative;
+            width: 312px;
+            bottom: 297px;
+
+        }
+
+        #wheelone {
+            position: relative;
+            width: 43px;
+            bottom: 316px;
+            right: 90px;
+            transform: rotate(0deg);
+            transition: transform 3s linear 0s;
+        }
+
+        #car:hover #wheelone,
+        #car:hover #wheeltwo{
+            transform: rotate(360deg);
+        }
+
+        #wheeltwo {
+            position: relative;
+            width: 45px;
+            bottom: 315px;
+            right: 314px;
+            transform: rotate(0deg);
+            transition: transform 3s linear 0s
+        }
+
+        #car {
+            margin-left: 0;
+            transition: margin-left 3s linear 0s;
+        }
+
+        #car:hover {
+            margin-left: 900px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one"> <img src="myroad.jpg" alt=""></div>
+    <div id="car">
+        <img id="carbody" src="my-car.png" alt="">
+        <img id="wheelone" src="wheel.png" alt="">
+        <img id="wheeltwo" src="wheel.png" alt="">
+    </div>
+</body>
+
+</html>

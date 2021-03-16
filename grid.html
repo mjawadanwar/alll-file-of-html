@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+       
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+        #two{
+       
+            background-color: blue;
+            height: 200px;
+            width: 400px;
+        }
+        #three{
+          height: 100px;
+          width: 50;
+            background-color: yellow;
+        }
+        #one{
+            grid-area: area1;
+        }
+        #two{
+            grid-area: area2;
+        }
+        #three{
+            grid-area: area3;
+        }
+        .parent{
+       width: 300px;
+       height: 200px;
+            display: grid;
+            grid-template:
+            "area1 area2 area1"
+            "area1 area2 area1"
+            "area3 area3 area3"
+
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="one"></div>
+        <div id="two"> </div>
+        <div id="three"></div>
+        
+        
+    </div>
+</body>
+</html>

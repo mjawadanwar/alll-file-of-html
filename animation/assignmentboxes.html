@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        #parent{
+            text-align: center;
+        }
+  @media screen and (max-width: 1077px){
+      #three{
+          display: none;
+      }
+  }
+  @media screen and (max-width: 641px){
+      #three,#two{
+          display: none;
+      }
+  }
+    
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+    <div id="one" class="box"></div>
+    <div id="two" class="box"></div>
+    <div id="three" class="box"></div>
+</div>
+</body>
+
+</html>
